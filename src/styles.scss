@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Colors */
+  --color-primary: #adc6ff;
+  --color-primary-container: #4b8eff;
+  --color-secondary: #8fd8ff;
+  --color-background: #131313;
+  --color-surface: #131313;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-surface-dim: #131313;
+  --color-outline-variant: rgba(65, 71, 85, 0.15); /* Ghost Border */
+
+  /* Typography */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Space Grotesk', monospace;
+  
+  /* Utilities */
+  --glass-bg: rgba(42, 42, 42, 0.6);
+  --glass-blur: 20px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: #e5e2e1;
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARCHITECT.DEV | Civil Engineer &amp; Full-Stack Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-container": "#00285c",
+                        "surface-container-low": "#1c1b1b",
+                        "on-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-fixed-dim": "#75d1ff",
+                        "primary": "#adc6ff",
+                        "background": "#131313",
+                        "on-background": "#e5e2e1",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-secondary": "#003548",
+                        "on-tertiary-fixed": "#351000",
+                        "inverse-surface": "#e5e2e1",
+                        "tertiary-fixed": "#ffdbcc",
+                        "inverse-on-surface": "#313030",
+                        "outline-variant": "#414755",
+                        "on-secondary-container": "#004b65",
+                        "surface-dim": "#131313",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary": "#8fd8ff",
+                        "on-surface-variant": "#c1c6d7",
+                        "tertiary-container": "#ef6719",
+                        "on-tertiary-fixed-variant": "#7c2e00",
+                        "secondary-fixed": "#c2e8ff",
+                        "primary-fixed": "#d8e2ff",
+                        "tertiary": "#ffb595",
+                        "secondary-container": "#00c1fd",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "outline": "#8b90a0",
+                        "surface-container": "#201f1f",
+                        "on-secondary-fixed": "#001e2b",
+                        "primary-container": "#4b8eff",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed-variant": "#004d67",
+                        "on-primary-fixed-variant": "#004493",
+                        "on-error": "#690005",
+                        "inverse-primary": "#005bc1",
+                        "surface-container-highest": "#353534",
+                        "surface-bright": "#393939",
+                        "on-primary-fixed": "#001a41",
+                        "surface-tint": "#adc6ff",
+                        "surface": "#131313",
+                        "on-primary": "#002e69",
+                        "on-tertiary": "#571e00",
+                        "on-tertiary-container": "#4c1a00"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blueprint-grid {
+            background-image: linear-gradient(to right, rgba(65, 71, 85, 0.1) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(65, 71, 85, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .diagonal-split {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl shadow-[0px_20px_40px_rgba(173,198,255,0.05)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-200 dark:text-blue-300" data-icon="grid_view">grid_view</span>
+<span class="text-xl font-black tracking-tighter text-blue-200 dark:text-blue-300 font-headline uppercase">ARCHITECT.DEV</span>
+</div>
+<button class="scale-95 active:scale-90 transition-transform text-blue-200">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center overflow-hidden">
+<!-- Background Layer -->
+<div class="absolute inset-0 z-0 flex">
+<div class="w-1/2 h-full bg-surface-container-lowest blueprint-grid opacity-40"></div>
+<div class="w-1/2 h-full bg-gradient-to-br from-surface-container-lowest to-on-primary-container/20"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-6 max-w-7xl mx-auto w-full">
+<div class="inline-block px-3 py-1 mb-6 bg-surface-container-highest border border-outline-variant/20">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-secondary">System Initialized</span>
+</div>
+<h1 class="font-headline text-5xl md:text-8xl font-black tracking-tighter leading-none uppercase mb-6 max-w-4xl">
+                    Dream-driven <span class="text-primary">civil engineer</span> and software developer.
+                </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                    Construction-tested, web-ready—turning curiosity into built reality. Bridging the gap between physical infrastructure and digital ecosystems.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-headline font-bold uppercase tracking-wider py-4 px-8 rounded-sm shadow-[0_0_20px_rgba(173,198,255,0.3)] hover:scale-[1.02] transition-transform">
+                        View Portfolio
+                    </button>
+<button class="border border-outline text-on-surface font-headline font-bold uppercase tracking-wider py-4 px-8 rounded-sm hover:bg-surface-container-high transition-colors">
+                        Contact Me
+                    </button>
+</div>
+</div>
+<!-- Technical Specs Overlay -->
+<div class="absolute bottom-10 right-10 hidden lg:block text-right">
+<div class="font-label text-[10px] text-outline-variant space-y-1 tracking-widest uppercase">
+<div>LAT: 40.7128° N</div>
+<div>LNG: 74.0060° W</div>
+<div>STATUS: ACTIVE_DEV</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface-dim relative">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-square relative z-10 border border-outline-variant/30 p-4">
+<img alt="Profile Image" class="w-full h-full object-cover grayscale brightness-75 contrast-125" data-alt="Close up professional portrait of a man looking forward" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmIqLDdiN9-1wHOIDY6_vpFKkhdzgFArO-4j6Yqu2qax3XvmgLqjKwprA9msQsb28VDcG57M4sROCUND5kNLCbbb1JMGAmecOEtnNUkK6Er4MQbrxfCaiJi8vrUo0Ras2jyTPJ1qyZ3TD8_MxdzSrCHt93LD8opBReVPX-3jdLMaqsURm8rYJAhKZV-6oRhtvtOcfYfgF9ZFiX2TDb_HmMabL6rR7veait0wg5PZGVrwwMLc0jlk1u_65oZitP9hNBvF4uIe8On8Go"/>
+<!-- Geometric Accent -->
+<div class="absolute -top-4 -left-4 w-12 h-12 border-t-2 border-l-2 border-primary"></div>
+<div class="absolute -bottom-4 -right-4 w-12 h-12 border-b-2 border-r-2 border-secondary"></div>
+</div>
+<div class="absolute inset-0 bg-primary/5 -translate-x-6 translate-y-6 z-0"></div>
+</div>
+<div>
+<h2 class="font-label text-secondary uppercase tracking-[0.3em] text-xs mb-8">Structural Integrity</h2>
+<blockquote class="font-headline text-3xl md:text-4xl font-light italic text-on-surface mb-12 leading-tight">
+                            "I see life as a waking dream, where every skyscraper and every line of code is a manifestation of human intent."
+                        </blockquote>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
+<div class="bg-surface-container-low p-6 border-l-2 border-primary">
+<div class="font-headline font-bold text-xl mb-1">Civil Engineer</div>
+<div class="font-label text-[10px] text-outline uppercase tracking-wider">Infrastructure</div>
+</div>
+<div class="bg-surface-container-low p-6 border-l-2 border-secondary">
+<div class="font-headline font-bold text-xl mb-1">Full Stack</div>
+<div class="font-label text-[10px] text-outline uppercase tracking-wider">Software</div>
+</div>
+<div class="bg-surface-container-low p-6 border-l-2 border-outline">
+<div class="font-headline font-bold text-xl mb-1">10+ Years Exp</div>
+<div class="font-label text-[10px] text-outline uppercase tracking-wider">Combined</div>
+</div>
+</div>
+<!-- Timeline -->
+<div class="space-y-8 relative before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[1px] before:bg-outline-variant/30">
+<div class="relative pl-10">
+<div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-background border-2 border-primary flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+</div>
+<h4 class="font-headline font-bold text-on-surface uppercase tracking-tight">Software Engineering Mastery</h4>
+<p class="text-sm text-outline mb-1">2021 — Present</p>
+<p class="text-on-surface-variant text-sm">Full-stack pivot, mastering React, Node.js and distributed systems architecture.</p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-background border-2 border-secondary flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
+</div>
+<h4 class="font-headline font-bold text-on-surface uppercase tracking-tight">Lead Structural Engineer</h4>
+<p class="text-sm text-outline mb-1">2018 — 2021</p>
+<p class="text-on-surface-variant text-sm">Spearheaded multi-million dollar residential projects and seismic retrofitting.</p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-background border-2 border-outline flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-outline rounded-full"></div>
+</div>
+<h4 class="font-headline font-bold text-on-surface uppercase tracking-tight">B.S. Civil Engineering</h4>
+<p class="text-sm text-outline mb-1">2014 — 2018</p>
+<p class="text-on-surface-variant text-sm">Graduated with honors, specialized in sustainable urban development.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-20 text-center">
+<h2 class="font-headline text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">The Toolkit</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Skill Card 1 -->
+<div class="bg-surface-container p-8 rounded-sm hover:bg-surface-container-high transition-all group border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block" data-icon="architecture">architecture</span>
+<h3 class="font-headline text-xl font-bold uppercase mb-6 tracking-tight">Civil Engineering</h3>
+<ul class="space-y-4 font-body text-sm text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Structural Design</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Site Coordination</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Materials Science</li>
+</ul>
+</div>
+<!-- Skill Card 2 -->
+<div class="bg-surface-container p-8 rounded-sm hover:bg-surface-container-high transition-all group border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="construction">construction</span>
+<h3 class="font-headline text-xl font-bold uppercase mb-6 tracking-tight">Construction</h3>
+<ul class="space-y-4 font-body text-sm text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-secondary"></span> Site Management</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-secondary"></span> Safety Compliance</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-secondary"></span> Quality Assurance</li>
+</ul>
+</div>
+<!-- Skill Card 3 -->
+<div class="bg-surface-container p-8 rounded-sm hover:bg-surface-container-high transition-all group border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-6 block" data-icon="terminal">terminal</span>
+<h3 class="font-headline text-xl font-bold uppercase mb-6 tracking-tight">Development</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase tracking-widest text-outline">React</span>
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase tracking-widest text-outline">Node.js</span>
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase tracking-widest text-outline">TypeScript</span>
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase tracking-widest text-outline">MongoDB</span>
+</div>
+</div>
+</div>
+<!-- Tool Icons Row -->
+<div class="mt-16 pt-12 border-t border-outline-variant/20 flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
+<div class="font-label text-sm uppercase font-bold tracking-[0.2em]">AutoCAD</div>
+<div class="font-label text-sm uppercase font-bold tracking-[0.2em]">Revit</div>
+<div class="font-label text-sm uppercase font-bold tracking-[0.2em]">ETABS</div>
+<div class="font-label text-sm uppercase font-bold tracking-[0.2em]">Git</div>
+<div class="font-label text-sm uppercase font-bold tracking-[0.2em]">Docker</div>
+</div>
+<!-- Chips -->
+<div class="mt-16 flex flex-wrap justify-center gap-3">
+<span class="px-6 py-2 rounded-full border border-outline-variant/30 text-xs font-label uppercase tracking-widest text-on-surface-variant">Problem Solving</span>
+<span class="px-6 py-2 rounded-full border border-outline-variant/30 text-xs font-label uppercase tracking-widest text-on-surface-variant">Collaboration</span>
+<span class="px-6 py-2 rounded-full border border-outline-variant/30 text-xs font-label uppercase tracking-widest text-on-surface-variant">Systems Thinking</span>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline text-4xl md:text-6xl font-black uppercase tracking-tighter">Manifestations</h2>
+<p class="font-label text-secondary uppercase tracking-[0.2em] text-xs mt-2">Selected Works Portfolio</p>
+</div>
+<div class="flex gap-4">
+<button class="font-label text-[10px] uppercase tracking-widest text-primary border-b-2 border-primary pb-1">All</button>
+<button class="font-label text-[10px] uppercase tracking-widest text-outline hover:text-on-surface transition-colors pb-1">Construction</button>
+<button class="font-label text-[10px] uppercase tracking-widest text-outline hover:text-on-surface transition-colors pb-1">Web Dev</button>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group bg-surface-container-low overflow-hidden border border-outline-variant/10">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Modern glass skyscraper" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern geometric glass skyscraper reflecting blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATr-aUNAUbi0E4OCSOWxeJ9n_17afoenORkdb5RkF1m_EJMqBiBRb5ZnJvsYrMY-aDMmJUO6zvSEM5PR6WX4AHNjK1kKLr38sjORwQqwZwctynphQQoGD48hBXWH9qHb2cC7CFQee1Xti8tJb-A8L-PkpRtv4pCe49LR1k_GxbaLLf6F4WWSlyWG0SRWdXQyXQYu8rOD16Zvt9cPog7utQYsaAGPrZ9bSbo8d-WOgiO0wDbHqhelTddjTB-QH6WPcdWuat9DjX4P7O"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary-container px-3 py-1 font-label text-[10px] uppercase font-bold tracking-widest">Construction</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold uppercase mb-2 tracking-tight">Skyline Heights</h3>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Structural lead for a 45-story commercial tower featuring innovative earthquake dampening systems.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="text-[10px] font-label text-outline uppercase">SAP2000</span>
+<span class="text-[10px] font-label text-outline uppercase">Project Mgmt</span>
+</div>
+<button class="w-full py-3 border border-outline hover:bg-surface-container-high font-label text-[10px] uppercase tracking-[0.2em] transition-colors">Details →</button>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-surface-container-low overflow-hidden border border-outline-variant/10">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Code on a screen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical code editor showing dark theme syntax highlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTj8Ix1nBFgfYOfBQV8ANlcXFP-vPETW9BNV-Jz7qSFCT1pjyKWp5LyC6206mbYP2eQhHXSpVA5I8hi5_5NO-RmDNAS1tO1sCP5O0ibsZ0RwyPJdIASQevAfkgE2hqtJ5G49yGWeaq72Ql8-hSiLRvC9pMmRMfjHSDX2ghd0QLlY-eAOfyNdjQgiYfgVd5wqzy__ule7zR9iE4TU-TyrhUdVv9IAlZHFec3g2_5Eolrj6FC0V6IoS81I9LO1AeIAUpc2tuAnfjGsD6"/>
+<div class="absolute top-4 left-4 bg-secondary text-on-secondary-container px-3 py-1 font-label text-[10px] uppercase font-bold tracking-widest">Web Dev</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold uppercase mb-2 tracking-tight">Forge SaaS Platform</h3>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Full-stack project management tool built specifically for small-scale construction firm logistics.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="text-[10px] font-label text-outline uppercase">React</span>
+<span class="text-[10px] font-label text-outline uppercase">Node.js</span>
+</div>
+<button class="w-full py-3 border border-outline hover:bg-surface-container-high font-label text-[10px] uppercase tracking-[0.2em] transition-colors">Details →</button>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group bg-surface-container-low overflow-hidden border border-outline-variant/10">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Construction blueprint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Detailed technical architectural blueprints with drafting tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw0iRRYAno1zgzWPiDOloniIPuilRhu2plEqnDe6HWxjDOWRcmsGaHO_Ciul-5zbfpjcxAnz3wrB2kUQeCoR_tqBC4_Lry-1ziykhfA-gBRgjWpvJGUxQG_hVM3-d__378qfajteDvoDLRsiybvvWmqMkhtfgbQJh9Vofpk2BK-DxzxgLamnSA23MN1FRTYLfkhOAIAu7KAOHU7TBBP9mE7cBqk3P1HMZ6p7iytXSzvLLB-y6CEG105MfDRVBAzq2D7NHP9tCgj-3e"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary-container px-3 py-1 font-label text-[10px] uppercase font-bold tracking-widest">Hybrid</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold uppercase mb-2 tracking-tight">Bridge Logic AI</h3>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">A neural network model designed to predict structural fatigue in suspension bridges.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="text-[10px] font-label text-outline uppercase">Python</span>
+<span class="text-[10px] font-label text-outline uppercase">AutoCAD API</span>
+</div>
+<button class="w-full py-3 border border-outline hover:bg-surface-container-high font-label text-[10px] uppercase tracking-[0.2em] transition-colors">Details →</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-dim">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline text-4xl font-black uppercase tracking-tighter mb-12">Core Capabilities</h2>
+<div class="space-y-4">
+<div class="p-6 bg-surface-container border-l-4 border-primary hover:translate-x-2 transition-transform">
+<h4 class="font-headline font-bold uppercase tracking-tight mb-2">Structural Consulting</h4>
+<p class="text-sm text-on-surface-variant">Expert analysis of load-bearing structures and material durability.</p>
+</div>
+<div class="p-6 bg-surface-container border-l-4 border-secondary hover:translate-x-2 transition-transform">
+<h4 class="font-headline font-bold uppercase tracking-tight mb-2">Site Supervision</h4>
+<p class="text-sm text-on-surface-variant">Real-time management of construction workflows and safety protocols.</p>
+</div>
+<div class="p-6 bg-surface-container border-l-4 border-primary hover:translate-x-2 transition-transform">
+<h4 class="font-headline font-bold uppercase tracking-tight mb-2">Full-Stack Development</h4>
+<p class="text-sm text-on-surface-variant">End-to-end digital solutions from UI design to scalable backend logic.</p>
+</div>
+<div class="p-6 bg-surface-container border-l-4 border-secondary hover:translate-x-2 transition-transform">
+<h4 class="font-headline font-bold uppercase tracking-tight mb-2">Rapid Prototyping</h4>
+<p class="text-sm text-on-surface-variant">Converting complex engineering concepts into interactive MVPs.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center bg-surface-container-lowest p-10 border border-outline-variant/10 blueprint-grid relative">
+<h3 class="font-headline text-2xl font-bold uppercase mb-12 text-center">Execution Pipeline</h3>
+<div class="flex flex-col gap-12 relative before:absolute before:left-1/2 before:top-0 before:bottom-0 before:w-px before:bg-outline-variant/30">
+<div class="flex items-center gap-8 relative">
+<div class="w-1/2 text-right">
+<h5 class="font-label text-xs uppercase tracking-widest text-secondary">Discover</h5>
+</div>
+<div class="w-4 h-4 rounded-full bg-secondary z-10 border-4 border-surface-container-lowest"></div>
+<div class="w-1/2 text-sm text-outline font-body">Requirement Analysis</div>
+</div>
+<div class="flex items-center gap-8 relative">
+<div class="w-1/2 text-right text-sm text-outline font-body">Blueprinting &amp; UI</div>
+<div class="w-4 h-4 rounded-full bg-primary z-10 border-4 border-surface-container-lowest"></div>
+<div class="w-1/2">
+<h5 class="font-label text-xs uppercase tracking-widest text-primary">Design</h5>
+</div>
+</div>
+<div class="flex items-center gap-8 relative">
+<div class="w-1/2 text-right">
+<h5 class="font-label text-xs uppercase tracking-widest text-secondary">Deliver</h5>
+</div>
+<div class="w-4 h-4 rounded-full bg-secondary z-10 border-4 border-surface-container-lowest"></div>
+<div class="w-1/2 text-sm text-outline font-body">Deployment &amp; QA</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Studies Section -->
+<section class="py-24 bg-background overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-black uppercase tracking-tighter">Impact Analytics</h2>
+</div>
+<div class="relative bg-surface-container-low p-1 border border-outline-variant/20">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-2/3 h-96 relative">
+<img alt="Large construction site" class="w-full h-full object-cover grayscale brightness-50" data-alt="Aerial view of a massive active construction infrastructure project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNmDmLCdxLzkTKP_vIieqkC04KhnIK7JLU03JgfDEEHJChlaS3Kh4IOXgwQAt8bNWGyuyMv4hx5PU1d0I6ar12aAkuRCLrY2Zdb-UutUgE9PGJAnWaudbRYoFDLQcoZKzw8Xl42qlBnHZrXiQ-7ZAT4uPjllPcoPmvNmO6HUfVXQMxjsU33fRYpkUVlgTTkaD4N9rcZCYi64273A3D1Pxglp9V8ZaVtppxtqk-n2f_EM-YK91SEQ_PS6H-s0Qokvdkothnt3QVrIeI"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-on-surface">
+<h3 class="font-headline text-3xl font-bold uppercase mb-2">Central Bridge Reconstruction</h3>
+<p class="font-label text-xs tracking-widest opacity-70">Infrastructure Optimization Case Study</p>
+</div>
+</div>
+<div class="md:w-1/3 p-10 flex flex-col justify-center gap-8 bg-surface-container">
+<div>
+<h5 class="font-label text-[10px] uppercase text-primary mb-1">Goal</h5>
+<p class="text-sm font-body text-on-surface-variant">Reduce material waste by 10% using data-driven scheduling.</p>
+</div>
+<div>
+<h5 class="font-label text-[10px] uppercase text-primary mb-1">Approach</h5>
+<p class="text-sm font-body text-on-surface-variant">Implemented custom BIM integration software with real-time site tracking.</p>
+</div>
+<div>
+<h5 class="font-label text-[10px] uppercase text-primary mb-1">Outcome</h5>
+<div class="font-headline text-4xl font-black text-secondary">15%</div>
+<p class="text-[10px] font-label uppercase tracking-widest text-outline">Increase in Operational Efficiency</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface-container-lowest relative blueprint-grid">
+<div class="max-w-3xl mx-auto px-6 relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline text-5xl font-black uppercase tracking-tighter mb-4">Initialize Contact</h2>
+<p class="font-body text-on-surface-variant leading-relaxed">Ready to build the next generation of physical or digital structures? Let's connect.</p>
+</div>
+<form class="space-y-8 bg-surface-dim/80 backdrop-blur-sm p-10 border border-outline-variant/10">
+<div>
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-3">Name</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface px-0 py-2 transition-colors transition-all" placeholder="Enter Full Name" type="text"/>
+</div>
+<div>
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-3">Email</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface px-0 py-2 transition-colors transition-all" placeholder="name@domain.com" type="email"/>
+</div>
+<div>
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-3">Message</label>
+<textarea class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface px-0 py-2 transition-colors transition-all" placeholder="Project details or collaboration inquiry..." rows="4"></textarea>
+</div>
+<div class="pt-6 flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-headline font-bold uppercase tracking-wider py-4 rounded-sm shadow-[0_0_20px_rgba(173,198,255,0.2)]">
+                            Send Message
+                        </button>
+<button class="px-8 border border-outline text-on-surface font-headline font-bold uppercase tracking-wider py-4 rounded-sm hover:bg-surface-container-high flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+                            Resume
+                        </button>
+</div>
+</form>
+<div class="mt-16 flex flex-col items-center gap-8">
+<div class="flex gap-10">
+<a class="text-outline hover:text-primary transition-colors flex items-center gap-2 font-label text-[10px] uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined" data-icon="link">link</span> LinkedIn
+                        </a>
+<a class="text-outline hover:text-secondary transition-colors flex items-center gap-2 font-label text-[10px] uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined" data-icon="code">code</span> GitHub
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 border-t border-slate-900">
+<div class="font-space-grotesk text-[10px] tracking-[0.2em] uppercase text-slate-600">
+            © 2024 THE DIGITAL ARCHITECT. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-8">
+<a class="font-space-grotesk text-[10px] tracking-[0.2em] uppercase text-slate-600 hover:text-blue-300 transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-space-grotesk text-[10px] tracking-[0.2em] uppercase text-slate-600 hover:text-blue-300 transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="font-space-grotesk text-[10px] tracking-[0.2em] uppercase text-slate-600 hover:text-blue-300 transition-colors opacity-80 hover:opacity-100" href="#">Source</a>
+</div>
+</footer>
+</body></html>
